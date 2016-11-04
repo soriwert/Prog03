@@ -6,15 +6,38 @@ public class ejercicio02 {
 		
 		int n=1;
 		int m=1;
-		int r=1;
+		int resultado = m*n;
+		
 		
 		
 		System.out.println ("Introduzca el número que desea multiplicar: ");
-		n=teclado.nextInt();
-		/*while (n >= 1 && n<=100){
-			System.out.println("Tabla de multiplicar de "+n);*/
-			switch (n){
-			case 1: n * 1 = m;
+		m=teclado.nextInt();
+		if (m >= 1 && m<=100){
+			
+			System.out.println("Tabla de multiplicar de "+m);
+			resultado = m*n;
+			System.out.println(m+" * "+n+" = "+n*m);
+			n++;
+			System.out.println(m+" * "+n+" = "+n*m);
+			n++;
+			System.out.println(m+" * "+n+" = "+n*m);
+			n++;
+			System.out.println(m+" * "+n+" = "+n*m);
+			n++;
+			System.out.println(m+" * "+n+" = "+n*m);
+			n++;
+			System.out.println(m+" * "+n+" = "+n*m);
+			n++;
+			System.out.println(m+" * "+n+" = "+n*m);
+			n++;
+			System.out.println(m+" * "+n+" = "+n*m);
+			n++;
+			System.out.println(m+" * "+n+" = "+n*m);
+			n++;
+			System.out.println(m+" * "+n+" = "+n*m);
+			n++;
+			//System.out.println(m*n+" * 2 = "+resultado);
+			
 			}
 			
 		}
