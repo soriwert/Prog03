@@ -10,15 +10,18 @@ public class ejercicio04 {
 		System.out.println("Escriba un número n: ");
 		n=teclado.nextInt();
 		a=n-1;
+		boolean x=true;
 
 		while (a>1){
 			if (n%a==0){
-
-				System.out.println("");
-				a=1;
+			
+			System.out.println(n+" no es primo ");
+			a=2;
+			x=false;
 			}
 			--a;
 		}
+		if (x)
 		System.out.println (n+" Es primo ");
 	}
 	
