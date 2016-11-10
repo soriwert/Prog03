@@ -7,17 +7,29 @@ public class ejercicio06 {
 
 		int n=1;
 		int m=1;
+		int a=1;
+
 		int impar = 0;
 		int par = 0;
 		System.out.println ("Escriba un número: ");
 
-		if (n==0 || m==0);
-		System.out.println ("los números impares"+impar);
-		System.out.println ("los números impares"+par);
-			while (n!=0 && m!==0);
+		while (n!=0){
+			n=teclado.nextInt();
 
+			if (a%2==0)
+				par=n+par;
 
-			}
+			else 
+				impar=n+impar;
+			a++;
+		}
+
+		System.out.println ("total de la suma en el orden par: "+par);
+		System.out.println ("total de la suma en el orden impar: "+impar);
+
 	}
-	}
+
 }
+
+
+
