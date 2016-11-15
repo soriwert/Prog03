@@ -1,31 +1,35 @@
 import java.util.Scanner;
-public class ejercicio04 {
+
+public class Ejercicio04 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner teclado = new Scanner (System.in);
-
-		int n,a;
-
-		System.out.println("Escriba un número n: ");
-		n=teclado.nextInt();
-		a=n-1;
-		boolean x=true;
-
-		while (a>1){
-			if (n%a==0){
-			
-			System.out.println(n+" no es primo ");
-			a=2;
-			x=false;
+		Scanner teclado= new Scanner(System.in);
+		int n, cont,sal;
+		boolean a=false;
+		System.out.println("Escribe el valor de N:");
+		n= teclado.nextInt();
+		sal=n;
+		if(n<-1) //Para numeros negativos
+		{
+			n=((n/n-n)-1);//Asi conseguimos el positivo del negativo que introducimos Ejem: -4 = 4 ; -7 = 7
+		}	
+		cont=n-1;
+		while(cont>1)
+		{
+			if(n%cont==0)
+			{
+				System.out.println("El numero "+sal+" no es primo.");
+				cont=2;
+				a=true;
 			}
-			--a;
+			--cont;
 		}
-		if (x)
-		System.out.println (n+" Es primo ");
+		if (n<=1&&n>=-1)
+			System.out.println("El numero "+sal+" no es primo.");
+		else if (a==false)
+			System.out.println("El numero "+sal+" es primo.");
 	}
-	
 
 }
-
 
