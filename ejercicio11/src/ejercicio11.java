@@ -1,11 +1,11 @@
 import java.util.Scanner;
-public class ejercicio10 {
+public class ejercicio11 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner teclado = new Scanner (System.in);
-
-		int n, divisor,p=1;
+		
+		int n=0, divisor,p=1;
 		boolean esPrimo;
 		boolean fin = false;
 
@@ -14,6 +14,12 @@ public class ejercicio10 {
 		
 		
 		do {
+			
+			
+			
+			
+			
+			
 			p++;
 			divisor = 2;
 			esPrimo = true;
@@ -22,10 +28,14 @@ public class ejercicio10 {
 				divisor++;
 			}
 
+			
+			
 			if (esPrimo)
 				fin = true;
 
-		} while (!fin);
+			
+
+		} while (p==n && !fin);
 
 
 
@@ -37,4 +47,3 @@ public class ejercicio10 {
 
 	}
 }
-
