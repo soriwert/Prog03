@@ -13,13 +13,7 @@ public class ejercicio11 {
 		p=teclado.nextInt();
 		
 		
-		do {
-			
-			
-			
-			
-			
-			
+		do {			
 			p++;
 			divisor = 2;
 			esPrimo = true;
